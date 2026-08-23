@@ -82,8 +82,22 @@
 
         .nav-links a:hover {
             color: #ff00b8;
+            
         }
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background: #ff00b8;
+    transition: width 0.25s ease;
+}
 
+.nav-links a:hover::after {
+    width: 100%;
+}
         /* =========================
            HERO
         ========================= */
